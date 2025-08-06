@@ -145,7 +145,19 @@ GOOGLEAPI = "YOUR_API_KEY"
 # config2.py
 DRIVEFOLDER = "YOUR_PUBLIC_GOOGLE_DRIVE_URL"
 ```
-### Step 3: Start Backend 1
+### Step 3: Add path to pretrained CNN model in `backend2/main.py`
+
+```python
+# backend2/main.py
+cnn = tf.keras.models.load_model('/path/to/trained_plant_disease_model.keras')  # Replace with actual path
+```
+### Step 4: Add path to YOLO model in `backend2/uav_image_detection.py`
+
+```python
+# backend2/uav_image_detection.py
+model = YOLO("/path/to/runs/detect/soyabean_disease_detector6/weights/best.pt")  # Replace with actual path
+```
+### Step 5: Start Backend 1
 ```bash
 # Open Anaconda Prompt
 conda activate backend1
@@ -153,7 +165,7 @@ cd path/to/AgroCareAI/backend1
 
 uvicorn main:app --reload --port 9000
 ```
-### Step 4: Start Backend 2
+### Step 6: Start Backend 2
 ```bash
 # Open another Anaconda Prompt
 conda activate backend2
@@ -161,9 +173,10 @@ cd path/to/AgroCareAI/backend2
 
 uvicorn main:app --reload
 ```
-### Step 5: Launch Frontend
+### Step 7: Launch Frontend
 Open the [index.html]() file using Live Server (in VS Code or any compatible IDE).
 
 ## ✅ Notes
 - Ensure all dependencies are correctly installed as per requirements.txt files in both backend folders.
 - GPU support is essential for backend2 to work efficiently.
+- Make sure that all models (CNN and YOLO) are properly trained on their respective datasets before deployment.
