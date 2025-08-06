@@ -1,4 +1,4 @@
-//Giving Error
+
 async function analyseGDriveImages() {
   try {
     const response = await fetch("http://localhost:8000/analyse-gdrive/", { method: "POST",});
@@ -14,4 +14,5 @@ async function analyseGDriveImages() {
     console.error("Error during GDrive analysis:", error);
     alert("Error during analysis: " + error.message);
   }
+
 }
