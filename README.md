@@ -30,6 +30,7 @@ AgroCareAI/
 │   └── style.css
 │
 ├── Notebooks/                         # Jupyter notebooks for training and inference
+│   ├── requirements.txt  
 │   ├── CNN model Notebooks/
 │   │   ├── Test_plant_disease.ipynb
 │   │   └── Train_plant_disease.ipynb
