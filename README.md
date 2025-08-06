@@ -172,7 +172,7 @@ uvicorn main:app --reload --port 9000
 conda activate backend2_env
 cd path/to/AgroCareAI/backend2
 
-uvicorn main:app --reload
+uvicorn main:app --reload --port 8000
 ```
 ### Step 7: Launch Frontend
 Open the [index.html]() file using Live Server (in VS Code or any compatible IDE).
