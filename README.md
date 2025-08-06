@@ -13,34 +13,33 @@
 - Display a map of the field with highlighted disease-affected grids.
 - Provide AI-generated treatment and remedy recommendations using LLMs.
 
-## 🛠️ Tech Stack Used
+## 🔧 Tech Stack
 
-#### 🖥️ Frontend
-- HTML
-- CSS
-- JavaScript
+### 🧠 AI / Deep Learning
+- **Ultralytics YOLOv8** – Real-time object detection and segmentation
+- **PyTorch (torch)** – Core deep learning framework
+- **Torchvision** – Vision datasets and image preprocessing utilities
+- **TensorFlow** – Additional model tasks and experimentation
+- **google-generativeai** – Google Gemini API for language-based AI tasks
 
-#### ⚙️ Backend
-- FastAPI
-- Uvicorn
-- python-multipart
-- httpx
+### 📥 Data Handling / Downloads
+- **gdown** – Downloading models and datasets from Google Drive
+- **NumPy, Pandas** – Data manipulation and processing
 
-#### 🧠 Machine Learning & Deep Learning
-- TensorFlow==2.10.0
-- scikit-learn==1.3.0
-- numpy==1.24.3
-- pandas==2.1.0
-- matplotlib==3.7.2
-- seaborn==0.13.0
+### 🖼️ Image Processing
+- **OpenCV** – Image and video capture and processing
 
-#### 🖼️ Image Processing
-- pillow
-- exifread
+### 🔌 API & Communication
+- **FastAPI** – Backend API for model serving
+- **httpx** – Asynchronous HTTP client for service-to-service communication
+  
+### 📊 Visualization
+- **Matplotlib / Seaborn** – Data and prediction visualization
 
-#### ☁️ Cloud & LLM Integration
-- gdown
-- google-generativeai
+### 🖥️ Frontend
+- **HTML** – Page structure
+- **CSS** – Styling and layout
+- **JavaScript** – Dynamic frontend behavior and API interaction
 
 ## 📂 Project Structure
 
