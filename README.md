@@ -2,7 +2,7 @@
 
 > A Mobile application for detecting plant diseases using images captured via drones and mobile devices. The system leverages AI for disease prediction and provides location-based treatment suggestions.
 
-## ⚙️ Features
+## 💡 Features
 
 - Capture images using mobile camera and import drone images from a shared drive.
 - Store all images securely in cloud storage like Google Drive.
@@ -176,7 +176,7 @@ uvicorn main:app --reload --port 8000
 ### Step 7: Launch Frontend
 Open the [index.html]() file using Live Server (in VS Code or any compatible IDE).
 
-## ✅ Notes
+## 📝 Notes
 - Ensure all dependencies are correctly installed as per requirements.txt files in both backend folders.
 - GPU support is essential for backend2 to work efficiently.
 - Make sure that all models (CNN and YOLO) are properly trained on their respective datasets before deployment.
