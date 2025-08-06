@@ -88,3 +88,72 @@ AgroCareAI/
 └── README.md
 
 ```
+## Getting Started
+
+## 🛠️ Project Setup
+
+Follow the steps below to set up the project on your local machine.
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/agroCareAI.git
+```
+### 2. Install Miniconda
+Download and install Miniconda3 from the official [Anaconda website](https://www.anaconda.com/download/success).
+
+### 3. Setup Backend 1 (FastAPI + AI-based Recommendation System)
+```bash
+# Open Anaconda Prompt
+conda create --name backend1 python=3.9
+conda activate backend1
+cd path/to/agroCareAI/backend1
+
+pip install --upgrade pip
+pip install -r requirements.txt
+
+conda deactivate
+```
+### 4. Setup Backend 2 (GPU-based Disease Detection with YOLO & CNN)
+```bash
+# Open new Anaconda Prompt
+conda create --name backend2 python=3.9
+conda activate backend2
+
+conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
+cd path/to/agroCareAI/backend2
+
+pip install --upgrade pip
+pip install -r requirements.txt
+
+conda deactivate
+```
+### 5. Train and Save Pretrained Models
+Run the Jupyter Notebooks provided in the repository to:
+-Train and save the YOLO model for object detection.
+-Train and save the CNN model for plant disease classification.
+
+
+## 🚀 Starting the Project
+
+### Step 1: Start Backend 1
+```bash
+# Open Anaconda Prompt
+conda activate backend1
+cd path/to/agroCareAI/backend1
+
+uvicorn main:app --reload --port 9000
+```
+### Step 2: Start Backend 2
+```bash
+# Open another Anaconda Prompt
+conda activate backend2
+cd path/to/agroCareAI/backend2
+
+uvicorn main:app --reload
+```
+### Step 3: Launch Frontend
+Open the [index.html]() file using Live Server (in VS Code or any compatible IDE).
+
+## ✅ Notes
+-Ensure all dependencies are correctly installed as per requirements.txt files in both backend folders.
+-GPU support is essential for backend2 to work efficiently.
