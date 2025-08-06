@@ -135,8 +135,17 @@ Run the Jupyter Notebooks provided in the repository to:
 
 
 ## 🚀 Starting the Project
-
-### Step 1: Start Backend 1
+### Step 1: Add your Google Generative AI API key to `backend1/config1.py`
+```python
+# backend1/config1.py
+GOOGLEAPI = "YOUR_API_KEY"
+```
+### Step 2: Add the public Google Drive link to `backend2/config2.py`
+```python
+# config2.py
+DRIVEFOLDER = "YOUR_PUBLIC_GOOGLE_DRIVE_URL"
+```
+### Step 3: Start Backend 1
 ```bash
 # Open Anaconda Prompt
 conda activate backend1
@@ -144,7 +153,7 @@ cd path/to/AgroCareAI/backend1
 
 uvicorn main:app --reload --port 9000
 ```
-### Step 2: Start Backend 2
+### Step 4: Start Backend 2
 ```bash
 # Open another Anaconda Prompt
 conda activate backend2
@@ -152,7 +161,7 @@ cd path/to/AgroCareAI/backend2
 
 uvicorn main:app --reload
 ```
-### Step 3: Launch Frontend
+### Step 5: Launch Frontend
 Open the [index.html]() file using Live Server (in VS Code or any compatible IDE).
 
 ## ✅ Notes
