@@ -2,4 +2,30 @@
 
 > A Mobile application for detecting plant diseases using images captured via drones and mobile devices. The system leverages AI for disease prediction and provides location-based treatment suggestions.
 
-<pre> smartcrop-app/ ├── <b>mobile_app/</b> # Flutter or Android project │ ├── lib/ │ ├── assets/ │ └── main.dart # Entry point for mobile UI │ ├── <b>backend/</b> # FastAPI backend server │ ├── main.py # Entry point for backend │ ├── api/ # REST API endpoints │ ├── model/ # Pretrained ML model │ ├── utils/ # Utility scripts │ └── requirements.txt # Python dependencies │ ├── <b>preprocessing/</b> # Image preprocessing scripts │ └── preprocess.py │ ├── <b>drone_integration/</b> # Drone image upload to cloud │ └── upload_to_drive.py │ ├── <b>map/</b> # Grid-based mapping │ ├── grid_mapper.py │ └── map_config.json │ ├── <b>llm_recommendation/</b> # LLM-powered treatment system │ └── treatment_agent.py │ ├── <b>docs/</b> # Reports and LaTeX documentation │ └── methodology.tex │ ├── <b>assets/</b> # Screenshots and media │ ├── homepage.png │ └── grid_map.png │ ├── LICENSE └── README.md </pre>
+## Project Structure
+
+AgroCareAI/
+├── backend1/                     # FastAPI backend for core APIs
+│   ├── config1.py
+│   ├── main.py
+│   └── requirements.txt
+│
+├── backend2/                     # Drone image processing and detection service
+│   ├── drone_images/             # Directory for storing drone-captured images
+│   ├── config2.py
+│   ├── DriveExtraction.py        # Google Drive integration for image storage
+│   ├── main.py                   # FastAPI backend for drone service
+│   ├── requirements.txt
+│   └── uav_image_detection.py    # ML model-based disease detection logic
+│
+├── frontend/                     # HTML, JS, CSS-based frontend
+│   ├── index.html
+│   ├── CaptureImage.html
+│   ├── CaptureImageScript.js
+│   ├── DronePanel.html
+│   ├── DronePanelScript.js
+│   ├── GridMap.html
+│   ├── GridMapScript.js
+│   └── style.css
+│
+└── README.md
