@@ -105,8 +105,8 @@ Download and install Miniconda3 from the official [Anaconda website](https://www
 ### 3. Setup Backend 1 (FastAPI + AI-based Recommendation System)
 ```bash
 # Open Anaconda Prompt
-conda create --name backend1 python=3.9
-conda activate backend1
+conda create --name backend1_env python=3.9
+conda activate backend1_env
 cd path/to/AgroCareAI/backend1
 
 pip install --upgrade pip
@@ -117,8 +117,8 @@ conda deactivate
 ### 4. Setup Backend 2 (GPU-based Disease Detection with YOLO & CNN)
 ```bash
 # Open new Anaconda Prompt
-conda create --name backend2 python=3.9
-conda activate backend2
+conda create --name backend2_env python=3.9
+conda activate backend2_env
 
 conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
 cd path/to/AgroCareAI/backend2
@@ -128,7 +128,8 @@ pip install -r requirements.txt
 
 conda deactivate
 ```
-### 5. Train and Save Pretrained Models
+### 5. Set the `backend2_env` environment as the kernel for all Jupyter notebooks.
+### 6. Train and Save Pretrained Models
 Run the Jupyter Notebooks provided in the repository to:
 - Train and save the YOLO models for object detection.
 - Train and save the CNN model for plant disease classification.
@@ -160,7 +161,7 @@ model = YOLO("/path/to/runs/detect/soyabean_disease_detector6/weights/best.pt") 
 ### Step 5: Start Backend 1
 ```bash
 # Open Anaconda Prompt
-conda activate backend1
+conda activate backend1_env
 cd path/to/AgroCareAI/backend1
 
 uvicorn main:app --reload --port 9000
@@ -168,7 +169,7 @@ uvicorn main:app --reload --port 9000
 ### Step 6: Start Backend 2
 ```bash
 # Open another Anaconda Prompt
-conda activate backend2
+conda activate backend2_env
 cd path/to/AgroCareAI/backend2
 
 uvicorn main:app --reload
