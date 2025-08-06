@@ -143,7 +143,7 @@ GOOGLEAPI = "YOUR_API_KEY"
 ```
 ### Step 2: Add the public Google Drive link to `backend2/config2.py`
 ```python
-# config2.py
+# backend2/config2.py
 DRIVEFOLDER = "YOUR_PUBLIC_GOOGLE_DRIVE_URL"
 ```
 ### Step 3: Add path to pretrained CNN model in `backend2/main.py`
