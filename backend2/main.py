@@ -88,13 +88,13 @@ async def predict_disease(file: UploadFile = File(...)):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Prediction failed: {str(e)}")
 
-#@app.post("/analyse-gdrive/")
+@app.post("/analyse-gdrive/")
 def download_process_predict():
     folder_url = DRIVEFOLDER
     output_dir = "drone_images"
     print("\nDownloading from Google Drive......\n")
     #Downloading Images from drive
-    #download_images_from_drive(folder_url, output_dir)
+    download_images_from_drive(folder_url, output_dir)
 
     print("\nProcessing images...\n")
     # Step 2: Process each image
@@ -118,8 +118,8 @@ def download_process_predict():
             except Exception as e:
                 print(f"{filename} -> Error in prediction: {e}")
 
-download_process_predict()
 
 @app.get("/analysis/")
 def get_analysis():
+
     return analysis_array
