@@ -96,7 +96,8 @@ Follow the steps below to set up the project on your local machine.
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/agroCareAI.git
+git clone https://github.com/your-username/AgroCareAI.git
+cd AgroCareAI
 ```
 ### 2. Install Miniconda
 Download and install Miniconda3 from the official [Anaconda website](https://www.anaconda.com/download/success).
@@ -106,7 +107,7 @@ Download and install Miniconda3 from the official [Anaconda website](https://www
 # Open Anaconda Prompt
 conda create --name backend1 python=3.9
 conda activate backend1
-cd path/to/agroCareAI/backend1
+cd path/to/AgroCareAI/backend1
 
 pip install --upgrade pip
 pip install -r requirements.txt
@@ -120,7 +121,7 @@ conda create --name backend2 python=3.9
 conda activate backend2
 
 conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
-cd path/to/agroCareAI/backend2
+cd path/to/AgroCareAI/backend2
 
 pip install --upgrade pip
 pip install -r requirements.txt
@@ -139,7 +140,7 @@ Run the Jupyter Notebooks provided in the repository to:
 ```bash
 # Open Anaconda Prompt
 conda activate backend1
-cd path/to/agroCareAI/backend1
+cd path/to/AgroCareAI/backend1
 
 uvicorn main:app --reload --port 9000
 ```
@@ -147,7 +148,7 @@ uvicorn main:app --reload --port 9000
 ```bash
 # Open another Anaconda Prompt
 conda activate backend2
-cd path/to/agroCareAI/backend2
+cd path/to/AgroCareAI/backend2
 
 uvicorn main:app --reload
 ```
