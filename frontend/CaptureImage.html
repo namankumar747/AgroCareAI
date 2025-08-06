@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Capture Image - AgroCare AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Camera Capture Mode</h1>
+  <video id="video" autoplay style="display:none;"></video>
+  <canvas id="canvas" style="display:none;"></canvas>
+  <img id="snapshot" alt="Captured Image" />
+  <div class="buttons">
+    <button id="startBtn">▶️ Start Camera</button>
+    <button id="captureBtn" style="display:none;">📸 Capture</button>
+    <button id="analysisBtn">Analyse Image</button>
+    <button onclick="location.href='index.html'">↩️ Back</button>
+    <div >
+        <div id="disease"></div>
+        <div id="description"></div>
+    </div>
+  </div>
+
+  <script src="CaptureImageScript.js"></script>
+</body>
+</html>

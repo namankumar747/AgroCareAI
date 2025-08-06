@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Field Grid Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="map"></div>
+  <div class="map-panel">
+    <button onclick="fetchAnalysisData()">Mark Disease on Map</button>
+    <button onclick="savegrid()">📌 Save Selected Field</button>
+    <button onclick="analyse()">Analyse Field</button>
+    <button onclick="saveInfo()">Save Field Information</button>
+    <button onclick="location.href='index.html'">↩️ Back to Home</button>
+  </div>
+  <div id="grid-container"></div>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6.5.0/turf.min.js"></script>
+  <script src="GridMapScript.js"></script>
+</body>
+</html>

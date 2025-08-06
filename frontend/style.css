@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    background: #f2f2f2;
+    background-image: url('premium_photo-1687880582685-b33bbca934b2.jpeg'); 
+    background-size: cover;         
+    background-position: center;    
+    background-repeat: no-repeat;  
+    min-height: 100vh;              
+}
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+h1 {
+    color: #08f117;
+    margin: 20px;
+}
+button {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #388e3c;
+}
+.buttons {
+    display: flex; 
+    flex-direction: column;
+    gap: 10px; 
+    width: 90%; 
+    max-width: 400px;
+}
+.status {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #08f117;
+}
+video, canvas, img {
+    width: 90%; max-width: 400px; margin: 10px 0;
+    border-radius: 10px;
+}
+
+input[type="file"] {
+    display: block;
+    margin: 20px auto;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    background: #fff;
+    margin: 5px auto;
+    padding: 10px;
+    max-width: 400px;
+    border-radius: 5px;
+    border-left: 5px solid #4caf50;
+}
+#map {
+    height: 80vh;
+    width: 100%;
+}
+.grid-label {
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+.map-panel {
+    display: flex;
+    padding: 15px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.map-panel button {
+    width: 160px;        
+    height: 45px;        
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .map-panel {
+        flex-direction: column;
+    }
+
+    .map-panel button {
+        width: 80%;
+    }
+}
+#disease {
+    color: white;
+    font-size: 24px;           /* Larger font size */
+    font-weight: bold;         /* Optional: make it bold */
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+#description {
+    color: white;
+    font-size: 16px;           /* Smaller than #disease */
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+/*
+#grid-container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  max-height: 100vh;
+  padding: 10px;
+  gap: 10px;
+  box-sizing: border-box;
+  width: 100vw;          /* ensure full-screen width 
+}
+*/
+
+#grid-container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: visible;        /* show full content without scroll */
+  padding: 10px;
+  gap: 10px;
+  box-sizing: border-box;
+  width: 100%;                /* take full width of parent */
+  max-width: 100vw;           /* prevent horizontal overflow */
+}
+
