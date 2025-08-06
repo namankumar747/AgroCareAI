@@ -129,8 +129,8 @@ conda deactivate
 ```
 ### 5. Train and Save Pretrained Models
 Run the Jupyter Notebooks provided in the repository to:
--Train and save the YOLO model for object detection.
--Train and save the CNN model for plant disease classification.
+- Train and save the YOLO models for object detection.
+- Train and save the CNN model for plant disease classification.
 
 
 ## 🚀 Starting the Project
@@ -155,5 +155,5 @@ uvicorn main:app --reload
 Open the [index.html]() file using Live Server (in VS Code or any compatible IDE).
 
 ## ✅ Notes
--Ensure all dependencies are correctly installed as per requirements.txt files in both backend folders.
--GPU support is essential for backend2 to work efficiently.
+- Ensure all dependencies are correctly installed as per requirements.txt files in both backend folders.
+- GPU support is essential for backend2 to work efficiently.
