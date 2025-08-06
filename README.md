@@ -6,20 +6,20 @@
 
 ```plaintext
 AgroCareAI/
-├── backend1/                          # FastAPI backend for core APIs
+├── backend1/                          # Backend Server for LLM model
 │   ├── config1.py
 │   ├── main.py
 │   └── requirements.txt
 │
-├── backend2/                          # Drone image processing and detection service
-│   ├── drone_images/                  # Directory for storing drone-captured images
+├── backend2/                          # Backend Server for Mobile Image and Drone Images Processing
+│   ├── drone_images/                  # Directory for storing drone-captured images from gdrive
 │   ├── config2.py
-│   ├── DriveExtraction.py             # Google Drive integration for image storage
-│   ├── main.py                        # FastAPI backend for drone service
+│   ├── DriveExtraction.py             # code for drone images extraction from public google drive
+│   ├── main.py                        # FastAPI code
 │   ├── requirements.txt
-│   └── uav_image_detection.py         # ML model-based disease detection logic
+│   └── uav_image_detection.py         # DL model for drone image processing
 │
-├── frontend/                          # HTML, JS, CSS-based frontend
+├── frontend/                          # HTML, CSS, JavaScript based frontend
 │   ├── index.html
 │   ├── CaptureImage.html
 │   ├── CaptureImageScript.js
