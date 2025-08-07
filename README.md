@@ -79,6 +79,7 @@ AgroCareAI/
 │   │   └── Predict_Disease_List.ipynb
 │   │
 │   ├── YOLO Fine Tuned Notebooks/
+│   │   ├── README.md
 │   │   └── Training_yolo_uav_model.ipynb
 │   │
 │   └── YOLO based one shot model Notebooks/
