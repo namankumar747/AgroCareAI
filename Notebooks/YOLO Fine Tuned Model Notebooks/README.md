@@ -17,7 +17,7 @@ uav_leaf_yolo_dataset/
 ├── data.yaml
 ```
 ```yaml
-# data.yaml - Generalized YOLOv8 dataset configuration
+# data.yaml - YOLOv8 dataset configuration
 
 # Paths to image folders
 train: <path_to_dataset>/train/images
